@@ -1,16 +1,65 @@
-# React + Vite
+# Tech Challenge Fase 3 - Blog FIAP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Front-end React da aplicação de blog desenvolvida como parte do Tech Challenge da Pós-Graduação Full Stack Development da FIAP.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 19 + Vite
+- React Router DOM
+- Axios
+- Styled Components
 
-## React Compiler
+## 📋 Pré-requisitos
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Node.js 20+
+- API da Fase 2 rodando em http://localhost:3000
+- Docker (opcional)
 
-## Expanding the ESLint configuration
+## ⚙️ Como rodar localmente
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/AndreBorges-Git/fiap-tech-challenge-fase3.git
+cd fiap-tech-challenge-fase3
+```
+
+### 2. Instale as dependências
+
+```bash
+npm install
+```
+
+### 3. Inicie o servidor de desenvolvimento
+
+```bash
+npm run dev
+```
+
+Acesse: http://localhost:5173
+
+## 🐳 Como rodar com Docker
+
+```bash
+docker-compose up
+```
+
+Acesse: http://localhost:5173
+
+## 🔐 Autenticação
+
+A área administrativa é protegida por login. Use as credenciais:
+
+- **Usuário:** admin
+- **Senha:** fiap2024
+
+## 📄 Páginas
+
+- **Home** — listagem de posts com busca
+- **Ler Post** — visualização completa de um post
+- **Novo Post** — formulário para criar post
+- **Admin** — painel para editar e excluir posts (requer login)
+
+## 🔗 Repositório da API (Fase 2)
+
+https://github.com/AndreBorges-Git/fiap-tech-challenge-fase2
